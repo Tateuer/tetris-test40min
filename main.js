@@ -124,7 +124,7 @@ function draw() {
   piece.shape.forEach((row, y) => {
     row.forEach((value, x) => {
       if (value) {
-        context.fillStyle = "yellow";
+        context.fillStyle = "white";
         context.fillRect(x + piece.position.x, y + piece.position.y, 1, 1);
       }
     });
