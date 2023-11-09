@@ -116,7 +116,7 @@ function draw() {
   board.forEach((row, y) => {
     row.forEach((value, x) => {
       if (value === 1) {
-        context.fillStyle = "blue";
+        context.fillStyle = "yellow";
         context.fillRect(x, y, 1, 1);
       }
     });
@@ -124,7 +124,7 @@ function draw() {
   piece.shape.forEach((row, y) => {
     row.forEach((value, x) => {
       if (value) {
-        context.fillStyle = "white";
+        context.fillStyle = "blue";
         context.fillRect(x + piece.position.x, y + piece.position.y, 1, 1);
       }
     });
