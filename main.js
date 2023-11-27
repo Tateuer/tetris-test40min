@@ -116,15 +116,14 @@ function draw() {
   board.forEach((row, y) => {
     row.forEach((value, x) => {
       if (value === 1) {
-        context.fillStyle = "blue";
-        context.fillRect(x, y, 1, 1);
+        context.fillStyle = "yellow";
       }
     });
   });
   piece.shape.forEach((row, y) => {
     row.forEach((value, x) => {
       if (value) {
-        context.fillStyle = "yellow";
+        context.fillStyle = "blue";
         context.fillRect(x + piece.position.x, y + piece.position.y, 1, 1);
       }
     });
