@@ -116,7 +116,7 @@ function draw() {
   board.forEach((row, y) => {
     row.forEach((value, x) => {
       if (value === 1) {
-        context.fillStyle = "blue";
+        context.fillStyle = "red";
       }
     });
   });
